@@ -6,4 +6,7 @@
     <string name="no_binario">No Binario</string>
     <string name="acepto_los_termino_y_condiciones">Acepto los termino y condiciones</string>
     <string name="aceptar">ACEPTAR</string>
+    <string name="gender_male">chico</string>
+    <string name="gender_female">chica</string>
+    <string name="gender_bin">binario</string>
 </resources>

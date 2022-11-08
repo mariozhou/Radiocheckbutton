@@ -2,6 +2,7 @@ package com.example.radiocheckbutton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,13 +11,16 @@ import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import java.security.PrivateKey;
+
 public class MainActivity extends AppCompatActivity {
 
     RadioButton radioButtonMale,radioButtonFemale,radioButtonBin;
     private CheckBox checkBoxTerms;
     Button buttonAccept;
     private static final String TAG = "MainActivity";
-    
+    public static final String genderTAG = "User_gender";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,10 +52,13 @@ public class MainActivity extends AppCompatActivity {
                 if (check){
                     if (radioButtonMale.isChecked()){
                         messaje = "chico has aceptado los terminos";
+                        launchNewActivity(getString(R.string.gender_male));
                     }else if (radioButtonFemale.isChecked()){
                         messaje = "chica ha aceptado los terminos";
+                        launchNewActivity(getString(R.string.gender_female));
                     }else if (radioButtonBin.isChecked()){
                         messaje = "has aceptado los terminos";
+                        launchNewActivity(getString(R.string.gender_bin));
                     } else{
                         messaje = "oye ha aceptado pero no ha seleccionado genero";
                     }
@@ -67,4 +74,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+    private void launchNewActivity(String gender){
+        Intent i = new Intent(this,WelcomeActivity2.class);
+        i.putExtra(genderTAG,gender);
+        startActivity(i);
+
+    }
+
 }
