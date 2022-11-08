@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Radiocheckbutton</string>
+    <string name="aceptar">ACCEPT</string>
+    <string name="no_binario">NO BINARIO</string>
+    <string name="mujer">WOMAN</string>
+    <string name="hombre">MAN</string>
+    <string name="seleccionar_genero">CHOICE GENEN</string>
+    <string name="acepto_los_termino_y_condiciones">ACCEPT TERMIN</string>
+</resources>

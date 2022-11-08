@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Radiocheckbutton</string>
+    <string name="app_name" translatable="false">Radiocheckbutton</string>
+    <string name="seleccionar_genero">Seleccionar genero</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="no_binario">No Binario</string>
+    <string name="acepto_los_termino_y_condiciones">Acepto los termino y condiciones</string>
+    <string name="aceptar">ACEPTAR</string>
 </resources>
